@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/centerMiddle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFDD79"
+        app:layout_constraintBottom_toTopOf="@+id/centerBottom"
+        app:layout_constraintEnd_toStartOf="@+id/rightMiddle"
+        app:layout_constraintStart_toEndOf="@+id/leftMiddle"
+        app:layout_constraintTop_toBottomOf="@+id/centerTop">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rightMiddle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFDD79"
+        app:layout_constraintBottom_toTopOf="@+id/rightBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rightTop">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/leftMiddle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFDD79"
+        app:layout_constraintBottom_toTopOf="@+id/leftBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftTop">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/centerBottom"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFDD79"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightBottom"
+        app:layout_constraintStart_toEndOf="@+id/leftBottom">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rightBottom"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFDD79"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/leftBottom"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFDD79"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/centerTop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFDD79"
+        app:layout_constraintEnd_toStartOf="@+id/rightTop"
+        app:layout_constraintStart_toEndOf="@+id/leftTop"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rightTop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFDD79"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/leftTop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFDD79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
