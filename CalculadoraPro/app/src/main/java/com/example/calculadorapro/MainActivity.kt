@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import java.lang.Exception
 import java.text.DecimalFormat
+import kotlin.math.sqrt
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,6 +15,8 @@ class MainActivity : AppCompatActivity() {
     val RESTA = "-"
     val MULTIPLICACION = "*"
     val DIVISION = "/"
+    val RAIZ = "√"
+    val POTENCIA = "^"
 
     var operacionActual = ""
 
@@ -43,6 +46,28 @@ class MainActivity : AppCompatActivity() {
 
         tvResultado.text = formatoDecimal.format(primerNumero) + operacionActual
         tvTemp.text = ""
+        }
+    }
+
+    fun cambiarOperadorRaiz(b: View) {
+        if (tvTemp.text.isNotEmpty() || primerNumero.toString() != "NaN"){
+            calcular()
+            val boton: Button = b as Button
+            operacionActual = boton.text.toString().trim()
+
+            tvResultado.text = operacionActual + formatoDecimal.format(primerNumero)
+            tvTemp.text = ""
+        }
+    }
+
+    fun cambiarOperadorPotencia(b: View) {
+        if (tvTemp.text.isNotEmpty() || primerNumero.toString() != "NaN"){
+            calcular()
+            val boton: Button = b as Button
+            operacionActual = POTENCIA
+
+            tvResultado.text = formatoDecimal.format(primerNumero) + operacionActual
+            tvTemp.text = ""
         }
     }
 
@@ -86,6 +111,8 @@ class MainActivity : AppCompatActivity() {
                    RESTA -> primerNumero = (primerNumero - segundoNumero)
                    MULTIPLICACION -> primerNumero = (primerNumero * segundoNumero)
                    DIVISION -> primerNumero = (primerNumero / segundoNumero)
+                   RAIZ -> primerNumero = sqrt(primerNumero)
+                   POTENCIA -> primerNumero = Math.pow(primerNumero, segundoNumero)
                }
            } else {
                primerNumero = tvTemp.text.toString().toDouble()

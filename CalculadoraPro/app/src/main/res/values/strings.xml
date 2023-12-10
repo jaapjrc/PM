@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">CalculadoraPro</string>
+    <string name="defaultText">0</string>
+    <string name="operacionMenos">-</string>
+    <string name="botonC">C</string>
+    <string name="numeroCuatro">4</string>
+    <string name="numeroCinco">5</string>
+    <string name="numeroSeis">6</string>
+    <string name="numeroUno">1</string>
+    <string name="numero2">2</string>
+    <string name="numeroTres">3</string>
+    <string name="operacionSuma">+</string>
+    <string name="masMenos">+/-</string>
+    <string name="numeroCero">0</string>
+    <string name="botonCE">CE</string>
+    <string name="botonDecimal">.</string>
+    <string name="operacionDivision">/</string>
+    <string name="numeroSiete">7</string>
+    <string name="numeroOcho">8</string>
+    <string name="numeroNueve">9</string>
+    <string name="operacionMulti">*</string>
+    <string name="botonIgual">=</string>
+    <string name="fachenkro">fachenkro</string>
+    <string name="operacionPotencia">x²</string>
+    <string name="operacionRaiz">√</string>
 </resources>
