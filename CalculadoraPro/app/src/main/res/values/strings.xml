@@ -21,6 +21,6 @@
     <string name="operacionMulti">*</string>
     <string name="botonIgual">=</string>
     <string name="fachenkro">fachenkro</string>
-    <string name="operacionPotencia">x²</string>
-    <string name="operacionRaiz">√</string>
+    <string name="operacionPotencia">^</string>
+    <string name="operacionRaiz">sqrt(n)</string>
 </resources>
