@@ -46,6 +46,18 @@ class MainActivity : AppCompatActivity() {
         tvTemp.text = ""
     }
 
+    fun raizCuadrada(b: View) {
+        try {
+            if (primerNumero.toString() != "NaN") {
+                primerNumero = sqrt(primerNumero)
+                tvTemp.text = formatoDecimal.format(primerNumero).toString()
+                tvResult.text = formatoDecimal.format(primerNumero).toString()
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
     fun calcular() {
         try {
             if (primerNumero.toString() != "NaN") {
@@ -61,14 +73,12 @@ class MainActivity : AppCompatActivity() {
                     "*" -> primerNumero = (primerNumero * segundoNumero)
                     "/" -> primerNumero = (primerNumero / segundoNumero)
                     "^" -> primerNumero = Math.pow(primerNumero, segundoNumero)
-                    "sqrt(n)" -> primerNumero = sqrt(segundoNumero)
-
                 }
             } else {
                 primerNumero = tvTemp.text.toString().toDouble()
             }
         } catch (e: Exception) {
-
+            e.printStackTrace()
         }
     }
 
@@ -91,7 +101,7 @@ class MainActivity : AppCompatActivity() {
         if (!tvTemp.text.toString().contains("-")) {
             tvTemp.text = "-" + tvTemp.text.toString()
         } else if (tvTemp.text.toString().contains("-")) {
-            tvTemp.text = tvTemp.text.toString().replace("-","")
+            tvTemp.text = tvTemp.text.toString().replace("-", "")
         }
     }
 

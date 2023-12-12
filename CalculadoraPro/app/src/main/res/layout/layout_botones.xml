@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_margin="3dp"
-        android:onClick="cambiarOperador"
+        android:onClick="raizCuadrada"
         android:textSize="24sp"
         app:cornerRadius="5dp"
         app:layout_column="3"
